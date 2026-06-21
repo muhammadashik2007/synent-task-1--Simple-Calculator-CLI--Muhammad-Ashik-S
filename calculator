@@ -1,0 +1,26 @@
+rint("simple calculator ")
+print("choice-1: Addition")
+print("choice-2: Subtraction")
+print("choice-3: Multiplication")
+print("choice-4: Division")
+choice=int(input("enter your choice (1-4): "))
+try:
+    num1 = float(input("enter your first number: "))
+    num2 = float(input("enter your second number: "))
+    if choice==1:
+        print("ADDITION")
+        print("result:",num1+num2)
+    elif choice==2:
+        print("SUBTRACTION")
+        print("result:",num1-num2)
+    elif choice==3:
+        print("MULTIPLICATION")
+        print("result:",num1*num2)
+    elif choice==4:
+        print("DIVISION")
+        print("result:",num1/num2)
+    else:
+        print("invalid choice")
+except ValueError:
+    print("invalid input ! enter only numbers")
+
